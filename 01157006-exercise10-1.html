@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img {
+            margin: 10px;
+        }
+        html {
+            height: 100%;
+        }
+
+        body {
+            min-height: 100%;
+            background: #eee;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            color: #222;
+            font-size: 14px;
+            line-height: 26px;
+            padding-bottom: 50px;
+        }
+
+        .container {
+            max-width: 700px;
+            background: #fff;
+            margin: 0px auto 0px;
+            box-shadow: 1px 1px 2px #DAD7D7;
+            border-radius: 3px;
+            padding: 40px;
+            margin-top: 50px;
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .full-name {
+            font-size: 40px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .first-name {
+            font-weight: 700;
+        }
+
+        .last-name {
+            font-weight: 300;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .email,
+        .phone {
+            color: #999;
+            font-weight: 300;
+        }
+
+        .separator {
+            height: 10px;
+            display: inline-block;
+            border-left: 2px solid #999;
+            margin: 0px 10px;
+        }
+
+        .position {
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: underline;
+        }
+
+        .details {
+            line-height: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section:last-of-type {
+            margin-bottom: 0px;
+        }
+
+        .section__title {
+            letter-spacing: 2px;
+            color: #54AFE4;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .section__list-item {
+            margin-bottom: 40px;
+        }
+
+        .section__list-item:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .left,
+        .right {
+            vertical-align: top;
+            display: inline-block;
+        }
+
+        .left {
+            width: 60%;
+        }
+
+        .right {
+            text-align: right;
+            width: 39%;
+        }
+
+        .name {
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-style: italic;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #000;
+        }
+
+        .skills__item {
+            margin-bottom: 10px;
+        }
+
+        input {
+            display: none;
+        }
+
+        label {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: #C3DEF3;
+            border-radius: 20px;
+            margin-right: 3px;
+        }
+
+        input:checked+label {
+            background: #79A9CE;
+        }
+    </style>
+</head>
+
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+
+    <div class="container">
+        <div class="header">
+            <div class="full-name">
+                <span class="first-name">Phil Mickelson(菲爾·米克森)</span>
+            </div>
+
+            <div>
+                <img src="Mickelson.jpg" width="60%">
+            </div>
+
+            <div class="about">
+                <span class="position">美國職業高爾夫球選手</span>
+                <span class="desc">
+                    米克森是一位成功的高爾夫球運動員，目前他已經獲得了45個PGA巡迴賽賽事冠軍，
+                    其中包括有6座四大賽冠軍：3次美國名人賽（2004年、2006年、2010年）、
+                    2次PGA錦標賽（2005年、2021年）和1次英國高爾夫球公開賽（2013年）。
+                    2019年，《福布斯》公佈的全球運動員收入排行榜，
+                    米克森以年收入4840萬美元，排名第19名[1]。
+                    他在2021年贏得PGA錦標賽，成為史上第一位年過50時贏得高爾夫大滿貫賽事冠軍的球手。
+                </span>
+            </div>
+        </div>
+        <div class="details">
+            <div class="section">
+                <div class="section__title">about</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">全名</div>
+                        </div>
+                        <div class="right">
+                            <div class="desc">Philip Alfred Mickelson</div>
+                        </div>                        
+                    </div>
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">暱稱</div>
+                        </div>
+                        <div class="right">
+                            <div class="desc">Lefty</div>
+                        </div>
+                    </div>
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">身高</div>
+                        </div>
+                        <div class="right">
+                            <div class="desc">6英尺3英寸（1.91公尺）</div>
+                        </div>
+                    </div>
+
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">體重</div>
+                        </div>
+                        <div class="right">
+                            <div class="desc">200磅（91公斤）</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </br>
+            <div class="section">
+                <div class="section__title">experience</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+
+                        <div class="text">
+                            
+                            <p>米克森於 2021 年贏得 PGA 錦標賽，以 50 歲高齡成為高爾夫歷史上最年長的大滿貫冠軍，並總共獲得了 6 個大滿貫冠軍。2023 年，52 歲的他在大師賽上意外獲得亞軍。</p></br>
+                            <p>2022 年 2 月，他發表評論稱，在希望加入即將舉行的高爾夫聯賽時，他願意無視沙烏地阿拉伯涉嫌侵犯人權的行為，這引發了爭議，此後他中斷了比賽。</p></br>
+                            <p>Workday 和畢馬威 (KPMG) 等贊助商放棄了他，但代言損失被他從 PGA 巡迴賽球員影響計劃和 2021 年 8 月出售的 6 個高爾夫球場中贏得的 600 萬美元所抵消。</p></br>
+                            <p>他於 2022 年開始參加 LIV 高爾夫巡迴賽，擔任 Hy Flyers GC 隊隊長。</p></br>
+                            <p>他的 PGA 獎金總額（超過 9600 萬美元）使他在巡迴賽歷史上僅次於泰格伍茲。但他最大的發薪日是在他職業生涯中超過 8 億美元的時期。</p></br>
+
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    </div>
+</body>
+
+</html>
